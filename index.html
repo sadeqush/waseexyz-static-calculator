@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculations</title>
+</head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style type="text/css">
+        html, body {
+            height: 100%;
+            margin: 0.5em;
+        }
+        input {
+        	height: 1.5em;
+        	width: 8em;
+        	margin: 0.25em;
+        }
+
+        #wrapper {
+            min-height: 100%; 
+        }
+    </style>
+<body>
+
+<div id="wrapper">
+<h3>With Se/Sy STATIC</h3>
+<form action="static.php" attribute="post" method="POST">
+n = <input type="number" step="0.0001" name="n"><br>
+kf = <input type="number" step="0.0001" name="kf"><br>
+ma = <input type="number" step="0.0001" name="ma"><br>
+se = <input type="number" step="0.0001" name="se"><br>
+kfs = <input type="number" step="0.0001" name="kfs"><br>
+tm = <input type="number" step="0.0001" name="tm"><br>
+sy = <input type="number" step="0.0001" name="sy"><br>
+<input type="submit">
+</form>
+
+<br>
+<h3>FATIGUE</h3>
+<form action="fatigue.php" attribute="post" method="POST">
+n = <input type="number" step="0.0001" name="n"><br>
+sy = <input type="number" step="0.0001" name="sy"><br>
+kf = <input type="number" step="0.0001" name="kf"><br>
+ma = <input type="number" step="0.0001" name="ma"><br>
+kfs = <input type="number" step="0.0001" name="kfs"><br>
+ta = <input type="number" step="0.0001" name="ta"><br>
+<input type="submit">
+</form>
+</div>
+
+
+</body>
+</html>
